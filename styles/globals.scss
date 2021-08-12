@@ -51,12 +51,12 @@ a {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
-  width: 100px;
-  
+  width: 100px;  
   background-size: 100%, 100%;
-  
-  
   background-image: none;
+  @media (max-width: 575.98px) {
+    visibility: hidden;
+  }
 }
 
 .carousel-control-next-icon:after

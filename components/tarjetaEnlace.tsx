@@ -2,13 +2,14 @@ import React from "react";
 import { Button, Card, Col, Ratio, Row } from "react-bootstrap";
 import Image from "next/image";
 import style from "./tarjetaEnlace.module.scss";
+import Link from "next/link";
 
 interface TarjetaEnlaceProps {
   titulo?: string;
   imagen: StaticImageData | string;
   volteada?: boolean;
   centrada?: boolean;
-  textoBoton: string;
+  textoBoton?: string;
   href?: string;
   small?: boolean;
   children: React.ReactNode;
@@ -42,10 +43,10 @@ export function TarjetaEnlace({
 
   return (
     <Row className="justify-content-center align-items-center mb-2 mb-sm-3 mb-md-5">
-      <Col md="6" lg="5" xl="4">
+      <Col >
         {multimedia}
       </Col>
-      <Col md={{ order: volteada ? "first" : "last", span: "6" }} lg="5" xl="4">
+      <Col md={{ order: volteada ? "first" : "last"}} >
         <Card
           className={`${style.contenedor} ${
             centrada ? "text-md-center" : "text-md-left"
@@ -62,10 +63,27 @@ export function TarjetaEnlace({
               </Card.Title>
             )}
             <Card.Text className={`mb-3`}>{children}</Card.Text>
-            <Button className={style.boton}>{textoBoton}</Button>
+            {textoBoton && (<BotonTarjeta href={href}>{textoBoton}</BotonTarjeta>) }
           </Card.Body>
         </Card>
       </Col>
     </Row>
   );
+}
+
+type BotonTarjetaProps = {
+  href?: string;
+  children: React.ReactNode;
+};
+
+function BotonTarjeta({ href, children }: BotonTarjetaProps) {
+  if (href) {
+    return (
+      <Link href={href} passHref>
+        <Button className={style.boton}>{children}</Button>
+      </Link>
+    );
+  } else {
+    return <Button className={style.boton}>{children}</Button>;
+  }
 }

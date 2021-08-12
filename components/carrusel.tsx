@@ -19,6 +19,7 @@ export default function Carrusel() {
       prevLabel=""
       nextLabel=""
       className="mb-2 mb-sm-3 mb-md-5"
+       interval={null}
     >
       <Carousel.Item>
         <ImagenCarrusel

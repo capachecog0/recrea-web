@@ -81,16 +81,18 @@ export default function SeUnHeroe() {
         <h2 className={estilosPagina["titulo2-sm"]}>
           También podría interesarte
         </h2>
-
+        
         <TarjetaEnlace
           titulo="Es momento de actuar"
           imagen={imgExtra}
           textoBoton="Más infomación"
+          href="/momento-de-actuar"
         >
           A partir de los 15 a 20 años, aprende como apoyar al Medio Ambiente.
         </TarjetaEnlace>
-      </ContenidoPagina>
 
+      </ContenidoPagina>
+      
       <Footer />
     </>
   );
