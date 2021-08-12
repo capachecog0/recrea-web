@@ -25,22 +25,22 @@ export default function Encabezado () {
         className={`${styles.navbar} align-items-center justify-content-md-center`}
       >
         <Col xs="auto" className={styles.navbarcolumn}>
-          <Link href="/capacitate">
+          <Link href="/">
             <a className={`${styles.navbarlink}`}>Capacitate</a>
           </Link>
         </Col>
         <Col xs="auto" className={styles.navbarcolumn}>
-          <Link href="/capacitate">
+          <Link href="/">
             <a className={`${styles.navbarlink}`}>Se Parte</a>
           </Link>
         </Col>
         <Col xs="auto" className={styles.navbarcolumn}>
-          <Link href="/capacitate">
+          <Link href="/">
             <a className={`${styles.navbarlink}`}>Educate</a>
           </Link>
         </Col>
         <Col xs="auto" className={styles.navbarcolumn}>
-          <Link href="/capacitate">
+          <Link href="/">
             <a className={`${styles.navbarlink}`}>Conocenos</a>
           </Link>
         </Col>
