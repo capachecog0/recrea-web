@@ -49,28 +49,28 @@ export default function Footer() {
               <div>
                 <a
                   className={styles["link-redes"]}
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   href="https://www.facebook.com/ReCreaOrg"
                 >
                   <Image src={face}></Image>
                 </a>
                 <a
                   className={styles["link-redes"]}
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   href="https://www.instagram.com/recreaorg"
                 >
                   <Image src={insta}></Image>
                 </a>
                 <a
                   className={styles["link-redes"]}
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   href="https://twitter.com/recreaorg"
                 >
                   <Image src={twitter}></Image>
                 </a>
                 <a
                   className={styles["link-redes"]}
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   href="https://api.whatsapp.com/send?phone=59178800360"
                 >
                   <Image src={whats}></Image>
