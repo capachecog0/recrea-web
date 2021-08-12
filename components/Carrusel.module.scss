@@ -1,0 +1,30 @@
+.carousel-caption {
+  position: absolute;
+  right: 55%;
+  bottom: 25%;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;  
+  text-align: left;
+}
+
+.boton-carrusel {
+    background-color: var(--tema-naranja);
+    color: var(--tema-blanco);
+    border-color: transparent;
+    &:hover, &:focus {
+        background-color: var(--tema-amarillo);
+        border-color: transparent;
+    }
+    
+}
+
+.caption-encabezado {
+    font-size: 4rem;
+}
+
+.caption-texto {
+    font-size: 2rem;
+}
+  
+  

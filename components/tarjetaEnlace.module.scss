@@ -1,0 +1,25 @@
+
+.contenedor {
+    border: none;     
+}
+
+.cabecera {
+    font-size: 2.125rem;
+    color: var(--tema-naranja)
+}
+
+.cabeceraPequeña {
+    @extend .cabecera;
+    font-size: 1.5rem;
+}
+
+.boton {
+    background-color: var(--tema-azul);
+    color: var(--tema-blanco);
+    border-color: transparent;
+    &:hover, &:focus {
+        background-color: var(--tema-naranja);
+        border-color: transparent;
+    }
+    
+}

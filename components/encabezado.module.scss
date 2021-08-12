@@ -1,0 +1,36 @@
+.logo {
+    min-height: 6rem;
+  }
+  
+  .navbar {
+    background-color: #4bbecd;
+    height: 4rem;
+  }
+  
+  .navbar .nav-link {
+    color: white;
+  }
+  
+  .navbarcolumn {
+    border-color: white;
+    border-style: none solid none none;
+    border-width: 1px;
+  }
+  
+  .navbar .navbarcolumn:first-child {
+    border-left-style: solid;
+  }
+  
+  .navbarcolumn:hover {
+    border-top: 5px solid #2e3a59;
+  }
+  
+  .navbarlink {
+    display: inline-block;
+    color: white;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .navbarlink:hover {
+    color: white;
+  }

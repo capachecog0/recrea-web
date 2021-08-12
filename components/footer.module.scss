@@ -1,0 +1,36 @@
+.contenedor {
+  border-top: 5px solid #fece17;
+}
+
+.contacto {
+  background-color: #2e7a84;
+  padding-bottom: 1.875rem;
+  color: white;
+}
+
+.copyright {
+  background-color: #e94c1f;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.dato-contacto {
+  display: flex;
+  align-items: center;
+  max-height: 1.188rem;
+  margin-top: 1rem;
+}
+
+.seccion-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+.link-redes {
+  display: inline-block;
+  margin-right: .2rem;
+}
