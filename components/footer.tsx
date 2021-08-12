@@ -7,8 +7,8 @@ import logoRecreaBlanco from "public/logos/logo-recrea-blanco.png";
 import cellphoneIcon from "public/iconos/icon-cellphone.svg";
 import emailIcon from "public/iconos/icon-mail.svg";
 
-import face from "public/redes/icon-FaceWhite.svg";
-import insta from "public/redes/icon-Instagram-White.svg";
+import face from "public/redes/Icon-FaceWhite.svg";
+import insta from "public/redes/Icon-Instagram-White.svg";
 import tiktok from "public/redes/Icon-TikTok-White.svg";
 import twitter from "public/redes/Icon-Twitter-White.svg";
 import whats from "public/redes/Icon-Whatsapp-Whatsapp.svg";
