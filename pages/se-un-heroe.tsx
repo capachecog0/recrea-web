@@ -5,28 +5,32 @@ import React from "react";
 import Image from "next/image";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import estilosPagina from "styles/pagina.module.scss";
-import styles from "styles/SeUnHeroe.module.scss";
 
-import imgPagina from 'public/paginas/se-un-heroe/imagen-pagina.png';
-import imgExtra from 'public/paginas/se-un-heroe/imagen-extra.png';
+import imgPagina from "public/paginas/se-un-heroe/imagen-pagina.png";
+import imgExtra from "public/paginas/se-un-heroe/imagen-extra.png";
 
-import imgCapacitate from "public/home/capacitate.png";
 import { TarjetaEnlace } from "components/tarjetaEnlace";
 import Footer from "components/footer";
+import { ContenidoPagina, TituloPagina } from "components/pagina";
+import { MomentoDeActuar } from "components/enlacesComunes";
 
 export default function SeUnHeroe() {
   return (
     <>
       <Encabezado />
 
-      <ImagenCarrusel
-        src={imgSeUnHeroe}
-        captionClassName="texto-verde"
-        alt="Se un Heroe"
-      >
-        <h3 className={styles["caption-encabezado"]}>¡Se un héroe!</h3>
-        <p className={styles["caption-texto"]}>Salva la naturaleza</p>
-      </ImagenCarrusel>
+      <div className="position-relative">
+        <ImagenCarrusel
+          src={imgSeUnHeroe}
+          captionClassName="texto-verde"
+          alt="Se un Heroe"
+        >
+          <h3>¡Se un héroe!</h3>
+          <p>
+            Recicla desde casa <br /> te enseñaremos como
+          </p>
+        </ImagenCarrusel>
+      </div>
 
       <ContenidoPagina>
         <TituloPagina>
@@ -81,33 +85,12 @@ export default function SeUnHeroe() {
         <h2 className={estilosPagina["titulo2-sm"]}>
           También podría interesarte
         </h2>
-        
-        <TarjetaEnlace
-          titulo="Es momento de actuar"
-          imagen={imgExtra}
-          textoBoton="Más infomación"
-          href="/momento-de-actuar"
-        >
-          A partir de los 15 a 20 años, aprende como apoyar al Medio Ambiente.
-        </TarjetaEnlace>
 
+        <MomentoDeActuar />
       </ContenidoPagina>
-      
+
       <Footer />
     </>
   );
 }
 
-const ContenidoPagina: React.FC = ({ children }) => {
-  return (
-    <Container as="main">
-      <Row className="justify-content-center">
-        <Col md="12" lg="10" xl="8">{children}</Col>
-      </Row>
-    </Container>
-  );
-};
-
-const TituloPagina: React.FC = ({ children }) => {
-  return <h1 className={estilosPagina.titulo}>{children}</h1>;
-};

@@ -15,6 +15,9 @@
     border-color: white;
     border-style: none solid none none;
     border-width: 1px;
+
+    //border-top: 5px solid transparent;
+    //border-bottom: 5px solid transparent;
   }
   
   .navbar .navbarcolumn:first-child {
@@ -22,7 +25,7 @@
   }
   
   .navbarcolumn:hover {
-    border-top: 5px solid #2e3a59;
+    //border-top: 5px solid #2e3a59;
   }
   
   .navbarlink {

@@ -1,8 +1,8 @@
 import Encabezado from "components/encabezado";
 import ImagenCarrusel from "components/imagenCarrusel";
-import imgSeUnHeroe from "public/carrusel/se-un-heroe.png";
+
 import React from "react";
-import Image from "next/image";
+
 import { Button, Col, Container, Row } from "react-bootstrap";
 import estilosPagina from "styles/pagina.module.scss";
 import styles from "styles/SeUnHeroe.module.scss";
@@ -16,23 +16,27 @@ import imgExtra from "public/paginas/recicla/extra.png";
 import imgClasificar from "public/paginas/recicla/clasificar.png";
 import imgSeparar from "public/paginas/recicla/separar.png";
 import imgEnterrar from "public/paginas/recicla/enterrar.png";
+import { ContenidoPagina, TituloPagina } from "components/pagina";
+import { VivamosVerdes } from "components/enlacesComunes";
 
 export default function SeUnHeroe() {
   return (
     <>
       <Encabezado />
 
-      <ImagenCarrusel
-        src={imgBanner}
-        captionClassName="texto-verde"
-        alt="Recolectores"
-      >
-        <h3 className={styles["caption-encabezado"]}>Recicla</h3>
-        <p className={styles["caption-texto"]}>
-          te enseñamos <br />
-          como hacerlo
-        </p>
-      </ImagenCarrusel>
+      <div className="position-relative">
+        <ImagenCarrusel
+          src={imgBanner}
+          captionClassName="texto-verde"
+          alt="Recolectores"
+        >
+          <h3 className={styles["caption-encabezado"]}>Recicla</h3>
+          <p className={styles["caption-texto"]}>
+            te enseñamos <br />
+            como hacerlo
+          </p>
+        </ImagenCarrusel>
+      </div>
 
       <ContenidoPagina>
         <TituloPagina>Recicla</TituloPagina>
@@ -96,33 +100,10 @@ export default function SeUnHeroe() {
           También podría interesarte
         </h2>
 
-        <TarjetaEnlace
-          titulo="Vivamos verde"
-          imagen={imgExtra}
-          textoBoton="Más infomación"
-          href="/recicla"
-        >
-          Si tienes de 5 a 7 años, aprende tus primeros pasos verdes.
-        </TarjetaEnlace>
+        <VivamosVerdes />
       </ContenidoPagina>
 
       <Footer />
     </>
   );
 }
-
-const ContenidoPagina: React.FC = ({ children }) => {
-  return (
-    <Container as="main">
-      <Row className="justify-content-center">
-        <Col md="12" lg="10" xl="8">
-          {children}
-        </Col>
-      </Row>
-    </Container>
-  );
-};
-
-const TituloPagina: React.FC = ({ children }) => {
-  return <h1 className={estilosPagina.titulo}>{children}</h1>;
-};
