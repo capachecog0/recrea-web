@@ -1,6 +1,6 @@
 import Encabezado from "components/encabezado";
 import ImagenCarrusel from "components/imagenCarrusel";
-import imgSeUnHeroe from "public/carrusel/se-un-heroe.png";
+
 import React from "react";
 import Image from "next/image";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -11,25 +11,28 @@ import imgBanner from "public/paginas/momento-de-actuar/banner.png";
 import imgPagina from "public/paginas/momento-de-actuar/cuerpo.png";
 import imgExtra from "public/paginas/momento-de-actuar/extra.png";
 
-import imgCapacitate from "public/home/capacitate.png";
 import { TarjetaEnlace } from "components/tarjetaEnlace";
 import Footer from "components/footer";
+import { ContenidoPagina, TituloPagina } from "components/pagina";
+import { RecolectoresBase } from "components/enlacesComunes";
 
 export default function MomentoDeActuar() {
   return (
     <>
       <Encabezado />
 
-      <ImagenCarrusel
-        src={imgBanner}
-        captionClassName="texto-verde"
-        alt="Se un Heroe"
-      >
-        <h3 className={styles["caption-encabezado"]}>
-          Es momento <br />
-          de actuar
-        </h3>
-      </ImagenCarrusel>
+      <div className="position-relative">
+        <ImagenCarrusel
+          src={imgBanner}
+          captionClassName="texto-verde"
+          alt="Se un Heroe"
+        >
+          <h3 className={styles["caption-encabezado"]}>
+            Es momento <br />
+            de actuar
+          </h3>
+        </ImagenCarrusel>
+      </div>
 
       <ContenidoPagina>
         <TituloPagina>
@@ -81,35 +84,10 @@ export default function MomentoDeActuar() {
           También podría interesarte
         </h2>
 
-        <TarjetaEnlace
-          volteada
-          titulo="Recolectores base"
-          imagen={imgExtra}
-          textoBoton="Más infomación"
-          href="/recolectores-base"
-        >
-          Mejora tus herramientas para realizar tu trabajo, con el material de
-          bioseguridad adecuado.
-        </TarjetaEnlace>
+        <RecolectoresBase volteada />
       </ContenidoPagina>
 
       <Footer />
     </>
   );
 }
-
-const ContenidoPagina: React.FC = ({ children }) => {
-  return (
-    <Container as="main">
-      <Row className="justify-content-center">
-        <Col md="12" lg="10" xl="8">
-          {children}
-        </Col>
-      </Row>
-    </Container>
-  );
-};
-
-const TituloPagina: React.FC = ({ children }) => {
-  return <h1 className={estilosPagina.titulo}>{children}</h1>;
-};

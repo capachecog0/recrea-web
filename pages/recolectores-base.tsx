@@ -13,23 +13,27 @@ import Footer from "components/footer";
 import imgBanner from "public/paginas/recolectores-base/banner.png";
 import imgPagina from "public/paginas/recolectores-base/cuerpo.png";
 import imgExtra from "public/paginas/recolectores-base/extra.png";
+import { ContenidoPagina, TituloPagina } from "components/pagina";
+import { Recicla } from "components/enlacesComunes";
 
 export default function SeUnHeroe() {
   return (
     <>
       <Encabezado />
 
-      <ImagenCarrusel
-        src={imgBanner}
-        captionClassName="texto-verde"
-        alt="Recolectores"
-      >
-        <h3 className={styles["caption-encabezado"]}>Recolectores</h3>
-        <p className={styles["caption-texto"]}>
-          Separa de manera <br />
-          inteligente
-        </p>
-      </ImagenCarrusel>
+      <div className="position-relative">
+        <ImagenCarrusel
+          src={imgBanner}
+          captionClassName="texto-verde"
+          alt="Recolectores"
+        >
+          <h3 className={styles["caption-encabezado"]}>Recolectores</h3>
+          <p className={styles["caption-texto"]}>
+            Separa de manera <br />
+            inteligente
+          </p>
+        </ImagenCarrusel>
+      </div>
 
       <ContenidoPagina>
         <TituloPagina>Recolectores base</TituloPagina>
@@ -92,33 +96,10 @@ export default function SeUnHeroe() {
           También podría interesarte
         </h2>
 
-        <TarjetaEnlace
-          titulo="Recicla"
-          imagen={imgExtra}
-          textoBoton="Más infomación"
-          href="/recicla"
-        >
-          Te enseñamos los mejores tips para que puedas reciclar de manera fácil
-        </TarjetaEnlace>
+        <Recicla />
       </ContenidoPagina>
 
       <Footer />
     </>
   );
 }
-
-const ContenidoPagina: React.FC = ({ children }) => {
-  return (
-    <Container as="main">
-      <Row className="justify-content-center">
-        <Col md="12" lg="10" xl="8">
-          {children}
-        </Col>
-      </Row>
-    </Container>
-  );
-};
-
-const TituloPagina: React.FC = ({ children }) => {
-  return <h1 className={estilosPagina.titulo}>{children}</h1>;
-};

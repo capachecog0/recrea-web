@@ -7,22 +7,23 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import styles from "./encabezado.module.scss";
 
-
-export default function Encabezado () {
+export default function Encabezado() {
   return (
     <Container fluid as={"header"}>
       <Row className={`${styles.logo} align-items-center`}>
         <Col>
-          <Image
-            src="/logos/logo-recrea.png" // Route of the image file
-            height={56} // Desired size with correct aspect ratio
-            width={178} // Desired size with correct aspect ratio
-            alt="Re-crea"
-          />
+          <Link href="/">
+            <a><Image
+              src="/logos/logo-recrea.png"
+              height={56}
+              width={178}
+              alt="Re-crea"
+            /></a>
+          </Link>
         </Col>
       </Row>
       <Row
-        className={`${styles.navbar} align-items-center justify-content-md-center`}
+        className={`${styles.navbar} align-items-center justify-content-center`}
       >
         <Col xs="auto" className={styles.navbarcolumn}>
           <Link href="/">

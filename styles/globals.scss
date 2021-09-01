@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -16,14 +16,12 @@ a {
 }
 
 :root {
-  --tema-azul: #2E7A84;
-  --tema-blanco: #FFFFFF;
-  --tema-naranja: #E94C1F;
-  --tema-amarillo: #FECE17;
+  --tema-azul: #2e7a84;
+  --tema-blanco: #ffffff;
+  --tema-naranja: #e94c1f;
+  --tema-amarillo: #fece17;
   --tema-negro: #444242;
-  --tema-verde: #4BBECD;
-
-
+  --tema-verde: #4bbecd;
 }
 
 .texto-naranja {
@@ -42,34 +40,32 @@ a {
   color: var(--tema-amarillo);
 }
 
-
-
-
-
-
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
-  width: 100px;  
+  width: 100px;
   background-size: 100%, 100%;
   background-image: none;
-  @media (max-width: 575.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
     visibility: hidden;
   }
 }
 
-.carousel-control-next-icon:after
-{
-  content: '>';
+.carousel-control-next-icon:after {
+  content: ">";
   font-size: 4rem;
-  color: #FECE17;
+  color: #fece17;
 }
 
 .carousel-control-prev-icon:after {
-  content: '<';
+  content: "<";
   font-size: 4rem;
-  color: #FECE17;
+  color: #fece17;
 }
 
 .banner-top {
