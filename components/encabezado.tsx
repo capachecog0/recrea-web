@@ -26,7 +26,7 @@ export default function Encabezado() {
         className={`${styles.navbar} align-items-center justify-content-center`}
       >
         <Col xs="auto" className={styles.navbarcolumn}>
-          <Link href="/">
+          <Link href="/capacitate">
             <a className={`${styles.navbarlink}`}>Capacitate</a>
           </Link>
         </Col>
