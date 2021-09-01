@@ -39,11 +39,10 @@ export default function Carrusel() {
       <Carousel.Item>
         <ImagenCarrusel
           src={imgCambioPositivo}
-          alt="Genera un cambio positivo"
-          captionClassName="texto-blanco"
+          alt="Genera un cambio positivo"          
         >
-          <h3 className={styles["caption-encabezado"]}>
-            ¡Genera un cambio positivo!
+          <h3 className={`${styles["caption-encabezado"]} texto-blanco`}>
+            ¡Genera <br /> un cambio <br /> positivo!
           </h3>
         </ImagenCarrusel>
       </Carousel.Item>
@@ -54,7 +53,7 @@ export default function Carrusel() {
           alt="Todos Podemos Ayudar"
           captionClassName={styles["caption-encabezado"]}
         >
-          <h3 className={styles["caption-encabezado"]}>Todos podemos ayudar</h3>
+          <h3 className={styles["caption-encabezado"]}>Todos <br /> podemos <br /> ayudar</h3>
         </ImagenCarrusel>
       </Carousel.Item>
 
@@ -67,7 +66,7 @@ export default function Carrusel() {
             ¡Todo cambio!
           </h3>
           <p className={`${styles["caption-texto"]} texto-verde`}>
-            Genera un gran impacto.
+            Genera un gran <br className=".d-none .d-sm-block" /> impacto.
           </p>
           <Button className={styles["boton-carrusel"]}>
             Te enseñamos como
@@ -78,13 +77,13 @@ export default function Carrusel() {
       <Carousel.Item>
         <ImagenCarrusel
           src={imgJornadasRecoleccion}
-          alt="Conoce nuestras jornadas de recoleccion"
+          alt="Conoce nuestras jornadas de  recoleccion"
         >
           <p className={`${styles["caption-texto"]} texto-blanco`}>
             Conoce nuestras
           </p>
           <h3 className={`${styles["caption-encabezado"]} texto-amarillo`}>
-            jornadas de recolección
+            jornadas de <br className=".d-none .d-sm-block" /> recolección
           </h3>
           <Button className={styles["boton-carrusel"]}>haz click aquí</Button>
         </ImagenCarrusel>
