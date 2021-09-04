@@ -17,7 +17,7 @@ export default function Encabezado() {
               src="/logos/logo-recrea.png"
               height={56}
               width={178}
-              alt="Re-crea"
+              alt="Logo Re.Crea"
             /></a>
           </Link>
         </Col>
@@ -36,12 +36,12 @@ export default function Encabezado() {
           </Link>
         </Col>
         <Col xs="auto" className={styles.navbarcolumn}>
-          <Link href="/">
+          <Link href="/educate">
             <a className={`${styles.navbarlink}`}>Educate</a>
           </Link>
         </Col>
         <Col xs="auto" className={styles.navbarcolumn}>
-          <Link href="/">
+          <Link href="/conocenos">
             <a className={`${styles.navbarlink}`}>Conocenos</a>
           </Link>
         </Col>
