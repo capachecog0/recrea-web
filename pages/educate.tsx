@@ -77,11 +77,7 @@ export default function Educate() {
           // href="/voluntariados"
         >
           Conoce un poco más las normativas nacionales.
-        </TarjetaEnlace>
-
-        
-
-        
+        </TarjetaEnlace>        
       </ContenidoPagina>
 
       <Footer />
