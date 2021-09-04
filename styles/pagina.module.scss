@@ -8,6 +8,11 @@
   margin-bottom: 2.25rem;
 }
 
+.tituloMargenReducido {
+  @extend .titulo;
+  margin-bottom: 1.5rem;
+}
+
 .titulo small {
   display: block;
   color: var(--tema-negro);

@@ -31,7 +31,7 @@ export default function Encabezado() {
           </Link>
         </Col>
         <Col xs="auto" className={styles.navbarcolumn}>
-          <Link href="/">
+          <Link href="/se-parte">
             <a className={`${styles.navbarlink}`}>Se Parte</a>
           </Link>
         </Col>

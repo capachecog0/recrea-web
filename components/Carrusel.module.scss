@@ -5,7 +5,8 @@
   text-align: left;
   left: 20%;
   bottom: 0;
-  top: 15vw;
+  top: 10vw;width: max-content;
+  height: max-content;
 
   @media (max-width: 1199.98px) {
     left: 12%;
@@ -16,6 +17,7 @@
   // }
 
   @media (max-width: 479.98px) {
+    background: rgba(0, 0, 0, 0.05);
     top: 5vw;
     left: 5vw;
   }
@@ -35,30 +37,35 @@
 .carousel-caption h3,
 .caption-encabezado {
   font-size: 4rem;
+  font-weight: 300;
 
   @media (max-width: 991.98px) {
     font-size: 3rem;
   }
 
   @media (max-width: 767.98px) {
-    font-size: 2rem;
+    font-size: 2rem;    
   }
 
   @media (max-width: 575.98px) {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.3rem;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   }
 }
 
 .carousel-caption p,
 .caption-texto {
   font-size: 2rem;
+  line-height: 2rem;
+
   @media (max-width: 767.98px) {
     font-size: 1rem;
+    line-height: 1rem;
   }
 
   @media (max-width: 575.98px) {
-    
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   }
 }

@@ -19,8 +19,7 @@ export default function Carrusel() {
         indicators={false}
         prevLabel=""
         nextLabel=""
-        className="mb-2 mb-sm-3 mb-md-5"
-        interval={null}
+        className="mb-2 mb-sm-3 mb-md-5"        
       >
         <Carousel.Item>
           <ImagenCarrusel
@@ -41,6 +40,7 @@ export default function Carrusel() {
 
         <Carousel.Item>
           <ImagenCarrusel
+            priority
             src={imgCambioPositivo}
             alt="Genera un cambio positivo"
           >
@@ -52,6 +52,7 @@ export default function Carrusel() {
 
         <Carousel.Item>
           <ImagenCarrusel
+            priority
             src={imgTodosAyudamos}
             alt="Todos Podemos Ayudar"
             captionClassName={styles["caption-encabezado"]}
@@ -64,6 +65,7 @@ export default function Carrusel() {
 
         <Carousel.Item>
           <ImagenCarrusel
+            priority
             src={imgCambioImpacto}
             alt="Todo cambio genera un gran impacto"
           >
@@ -81,6 +83,7 @@ export default function Carrusel() {
 
         <Carousel.Item>
           <ImagenCarrusel
+            priority
             src={imgJornadasRecoleccion}
             alt="Conoce nuestras jornadas de  recoleccion"
           >
