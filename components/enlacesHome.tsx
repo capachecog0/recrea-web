@@ -36,7 +36,7 @@ export default function EnlacesHome() {
             imagen={imgEducate}
             textoBoton="Más infomación"
           >
-            El cambio comienza desde ti, conoce nuestra biblioteca gratuita.
+            El cambio comienza contigo, conoce nuestra biblioteca gratuita.
           </TarjetaEnlace>
 
           <Row
