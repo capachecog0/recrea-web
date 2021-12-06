@@ -59,12 +59,6 @@ export default function SeParte() {
           Forma parte del equipo que genera el cambio
         </TarjetaEnlace>
 
-        <h2 className="text-center texto-naranja mb-4">Agenda del Mes</h2>
-
-        <Col xs="12" lg="10" className="m-auto mb-5">
-          <Image src={imgCalendario}></Image>
-        </Col>
-
         <TarjetaEnlace
           titulo="Puntos de acopio"
           imagen={imgBasurero}
