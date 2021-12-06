@@ -75,7 +75,7 @@ export default function Encabezado() {
               <a className={`${styles.navbarlink}`}>Conocenos</a>
             </Link>
           </div>
-        </div>
+        </div> 
       </div>
       
       
