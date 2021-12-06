@@ -57,7 +57,7 @@ export default function Voluntariados() {
             ¿Quieres ser parte de la Solución?
           </h2>
           <Button
-            href="https://https://api.whatsapp.com/send?phone=59178800360"
+            href="https://api.whatsapp.com/send?phone=59178800360"
             className={estilosPagina.botonNaranja}
           >
             Contáctanos
