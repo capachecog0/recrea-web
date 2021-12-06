@@ -22,7 +22,7 @@ export function TarjetaLibro(datos:any){
                 <h3>{datos.descripcion}</h3>
             </div>
             <div>
-                <a href={datos.link} className="btn-download" target="_blank"> 
+                <a href={datos.link} className="btn-download" target="_blank" rel="noreferrer"> 
                     <Image src={downloadIcon} alt="Descargar icono"></Image>
                 </a>
             </div>

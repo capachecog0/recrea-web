@@ -49,7 +49,7 @@ export default function SeUnHeroe() {
 
         <div>
           <div className={estilosPagina.imagenCuerpo}>
-            <Image src={imgPagina}></Image>
+            <Image src={imgPagina} alt="Imagen, se un heroe"></Image>
           </div>
           <h3 className={estilosPagina.titulo3}>
             ¿Por qué enseñar a los niños a reciclar?

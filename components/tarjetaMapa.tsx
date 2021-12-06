@@ -14,7 +14,7 @@ export function TarjetaMapa(datos:any){
             <h3>{datos.descripcion}</h3>
         </div>
         <div>
-            <a href={datos.link} className="btn-download" target="_blank"> 
+            <a href={datos.link} className="btn-download" target="_blank" rel="noreferrer"> 
                 <Image src={gotoIcon} alt="Descargar icono"></Image>
             </a>
         </div>

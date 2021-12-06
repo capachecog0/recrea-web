@@ -30,7 +30,7 @@ export default function Carrusel() {
           >
             <h3 className={styles["caption-encabezado"]}>¡Se un héroe!</h3>
             <p className={styles["caption-texto"]}>Salva la naturaleza</p>
-            <Link href="/se-un-heroe">
+            <Link href="/se-un-heroe" passHref={true}>
               <Button className={styles["boton-carrusel"]}>
                 haz click aquí
               </Button>
@@ -94,7 +94,7 @@ export default function Carrusel() {
               jornadas de <br className=".d-none .d-sm-block" /> recolección
             </h3>
             <Button className={styles["boton-carrusel"]}>
-              <a href="/voluntariados">Haz click aquí</a>
+              <Link href="/voluntariados">Haz click aquí</Link>
             </Button>
           </ImagenCarrusel>
         </Carousel.Item>

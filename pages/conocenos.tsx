@@ -45,7 +45,7 @@ export default function Educate() {
           voluntariado.
         </p>
 
-        <Image layout="responsive" src={imgCuerpo}></Image>
+        <Image layout="responsive" src={imgCuerpo} alt="Imagen, conocenos mas"></Image>
 
         <h2 className="text-center texto-naranja mt-5 mb-3">
           Generemos el cambio juntos, contáctanos
@@ -63,6 +63,7 @@ export default function Educate() {
                 src={phoneIcon}
                 layout="fixed"
                 objectFit="scale-down"
+                alt="Boton de contacto WhatsApp"
               ></Image>
               <span>&nbsp; WhatsApp</span>
             </Col>
@@ -73,6 +74,7 @@ export default function Educate() {
                 src={emailIcon}
                 layout="fixed"
                 objectFit="scale-down"
+                alt="Boton de contacto, email"
               ></Image>
               <span>&nbsp; colmenajuvenil@recreabolivia.org</span>
             </Col>

@@ -66,7 +66,7 @@ export default function MomentoDeActuar() {
             producir productos nuevos con menos residuos.
           </p>
         </div>
-        <Image src={imgPagina} layout="responsive"></Image>
+        <Image src={imgPagina} layout="responsive" alt="Imagen, reciclaje"></Image>
 
         <div className="text-center">
           <h2 className={estilosPagina["titulo2-sm"]}>

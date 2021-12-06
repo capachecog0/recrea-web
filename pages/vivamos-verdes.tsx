@@ -50,7 +50,7 @@ export default function VivamosVerde() {
         Mediante contenido divertido, educativo y actividades didácticas ellos conocerán cómo respetar, cuidar y valorar nuestro planeta desde su hogar. Apoya a nuestras futuras generaciones a dar sus primeros pasos verdes porque el futuro es hoy.
         </p>
 
-        <Image layout="responsive" src={imgCuerpo}></Image>
+        <Image layout="responsive" src={imgCuerpo} alt="Vivamos verde"></Image>
 
         <h2 className={estilosPagina.titulo2} style={{paddingTop: "1em"}}>
           Te invitamos a registrarte en nuestros cursos "Vivamos Verde"
