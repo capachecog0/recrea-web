@@ -38,32 +38,30 @@ export function TarjetaEnlace({
       </Ratio>
     );
   } else {
-    multimedia = <Image src={imagen} layout="responsive" />;
+    multimedia = <Image src={imagen} layout="responsive" className={style.tarjetaEnlaceImagen}/>;
   }
 
   return (
-    <Row className="justify-content-center align-items-center mb-2 mb-sm-3 mb-md-5">
+    <Row className={"justify-content-center align-items-center mb-2 mb-sm-3 mb-md-5" + style.tarjetaEnlaceComponent}>
       <Col >
         {multimedia}
       </Col>
-      <Col md={{ order: volteada ? "first" : "last"}} >
+      <Col md={{ order: volteada ? "first" : "last" }} >
         <Card
-          className={`${style.contenedor} ${
-            centrada ? "text-md-center" : "text-md-left"
-          }`}
+          className={`${style.contenedor} ${centrada ? "text-md-center" : "text-md-left"
+            }`}
         >
           <Card.Body>
             {!!titulo && (
               <Card.Title
-                className={`${
-                  small ? style.cabeceraPequeña : style.cabecera
-                } mb-3`}
+                className={`${small ? style.cabeceraPequeña : style.cabecera
+                  } mb-3`}
               >
                 {titulo}
               </Card.Title>
             )}
             <Card.Text className={`mb-3`}>{children}</Card.Text>
-            {textoBoton && (<BotonTarjeta href={href}>{textoBoton}</BotonTarjeta>) }
+            {textoBoton && (<BotonTarjeta href={href}>{textoBoton}</BotonTarjeta>)}
           </Card.Body>
         </Card>
       </Col>

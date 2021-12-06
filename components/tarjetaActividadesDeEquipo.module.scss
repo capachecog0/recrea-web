@@ -1,0 +1,48 @@
+.actividadesDeEquipo{
+    flex: 1 1 calc(50% - 2em);
+    display: flex;
+    margin: 0 1em;
+    margin-bottom: 2em;
+
+    flex-flow: nowrap column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &>div:first-child{
+        /*border-radius: var(--radius);
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
+        justify-content: center;*/
+    }
+    &>*{
+        display: block;
+        width: 20em !important;
+    }
+    img{
+        width: 20em;
+        height: 15em;
+        flex: 1 1 calc(50% - 1em);
+        //margin: .5em;
+        object-fit: cover;
+        border-radius: var(--radius);
+    }
+}
+.actividadesDatos{
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    justify-content: flex-start;
+    h2{
+        font-size: 1.25em;
+        color: var(--tema-naranja);
+        font-weight: 600;
+        margin: .25em 0;
+    }
+    h3{
+        font-size: 1em;
+        color: var(--texto-color);
+        font-weight: 300;
+        margin: .25em 0;
+    }
+}

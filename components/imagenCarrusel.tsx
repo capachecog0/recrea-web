@@ -28,9 +28,10 @@ export default function ImagenCarrusel({
           priority={priority}
           layout="responsive"
           placeholder="blur"
+        
         />
         <Carousel.Caption
-          className={`${styles["carousel-caption"]} ${captionClassName || ""}`}
+          className={`${styles["carousel-caption"]} ${captionClassName || ""}`} 
         >
           {children}
         </Carousel.Caption>

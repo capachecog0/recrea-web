@@ -16,6 +16,7 @@ export default function EnlacesHome() {
             titulo="Capacítate"
             imagen={imgCapacitate}
             textoBoton="Más infomación"
+            href="/capacitate"
           >
             Conoce todos los cursos y capacitaciones que tenemos para ti, no
             importa la edad que tengas.
@@ -26,6 +27,7 @@ export default function EnlacesHome() {
             titulo="Se parte"
             imagen={imgSeParte}
             textoBoton="Más infomación"
+            href="/se-parte"
           >
             Todos podemos lograr un cambio positivo <br></br> enterate como lo
             puedes lograr.
@@ -35,6 +37,7 @@ export default function EnlacesHome() {
             titulo="Edúcate"
             imagen={imgEducate}
             textoBoton="Más infomación"
+            href="/educate"
           >
             El cambio comienza contigo, conoce nuestra biblioteca gratuita.
           </TarjetaEnlace>
@@ -50,6 +53,7 @@ export default function EnlacesHome() {
             centrada
             imagen="https://www.youtube.com/embed/BfMQEpZs9xw"
             textoBoton="Revisa todos los videos"
+            href="/videoteca"
           >
             Recrea tu manera <br /> de aprender desde casa{" "}
           </TarjetaEnlace>

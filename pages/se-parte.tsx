@@ -59,25 +59,6 @@ export default function SeParte() {
           Forma parte del equipo que genera el cambio
         </TarjetaEnlace>
 
-        <TarjetaEnlace
-          titulo="Normativa Nacional"
-          imagen={imgNormativa}
-          textoBoton="Más infomación"
-          href="/voluntariados"
-        >
-          Conoce la Normativa Nacional
-        </TarjetaEnlace>
-
-        <TarjetaEnlace
-          volteada
-          titulo="Libros educativos"
-          imagen={imglibrosEducativos}
-          textoBoton="Más infomación"
-          href="/libros-educativos"
-        >
-          Descarga libros divertidos y de gran utilidad
-        </TarjetaEnlace>
-
         <h2 className="text-center texto-naranja mb-4">Agenda del Mes</h2>
 
         <Col xs="12" lg="10" className="m-auto mb-5">
@@ -88,7 +69,7 @@ export default function SeParte() {
           titulo="Puntos de acopio"
           imagen={imgBasurero}
           textoBoton="Más infomación"
-          href="/puntos-acopi"
+          href="/puntos-de-recoleccion"
         >
           Conoce los lugares donde puedes depositar tus residuos en el país
         </TarjetaEnlace>

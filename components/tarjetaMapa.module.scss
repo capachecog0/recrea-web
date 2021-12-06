@@ -1,0 +1,42 @@
+.tarjetaMapaComponent{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2em;
+    padding-right: 1em;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    h2{
+        font-weight: 700;
+        font-size: 1.5em;
+        color: var(--tema-naranja);
+        cursor: pointer;
+
+        text-decoration: unset;
+        &:hover{
+            text-decoration: underline;
+
+        }
+    }
+    h3{
+        font-weight: 400;
+        font-size: 1em;
+        color: black;
+        padding-right: 1em;
+    }
+    a{
+        background-color: var(--tema-naranja);
+        padding: .75em .5em .25em .5em;
+        border-radius: var(--radius);
+        &:hover{
+            background-color: var(--tema-celeste);
+        }
+        img{
+            min-width: 1em;
+            filter: invert(100%);
+        }
+    }
+}

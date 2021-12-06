@@ -20,10 +20,10 @@ export default function Patrocinadores() {
             </Row>
             <Row className="justify-content-center">
               <Col xs="auto">
-                <Image src={logoCocacola}></Image>
+                <Image src={logoCocacola} className={styles.logoImagen}></Image>
               </Col>
               <Col xs="auto">
-                <Image src={logoColmena}></Image>
+                <Image src={logoColmena} className={styles.logoImagen}></Image>
               </Col>
             </Row>
           </Col>

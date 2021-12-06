@@ -22,6 +22,11 @@ a {
   --tema-amarillo: #fece17;
   --tema-negro: #444242;
   --tema-verde: #4bbecd;
+  --tema-celeste: #4bbecd;
+
+  --texto-color: #212529;
+
+  --radius: 15px;
 }
 
 .texto-naranja {
@@ -70,4 +75,28 @@ a {
 
 .banner-top {
   margin-bottom: 10rem;
+}
+
+.imagen-between-text{
+  width: 100% !important;
+  height: 20em;
+  display: block;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2em 0;
+}
+.imagen-between-text>*{
+  width: 100% !important;
+  height: 100%;
+}
+.imagen-between-text img{
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .imagen-between-text{
+    height: 15em;
+  }
 }

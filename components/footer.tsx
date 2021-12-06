@@ -7,14 +7,8 @@ import logoRecreaBlanco from "public/logos/logo-recrea-blanco.png";
 import cellphoneIcon from "public/iconos/icon-cellphone.svg";
 import emailIcon from "public/iconos/icon-mail.svg";
 
-import face from "public/redes/Icon-FaceWhite.svg";
-import insta from "public/redes/Icon-Instagram-White.svg";
-import tiktok from "public/redes/Icon-TikTok-White.svg";
-import twitter from "public/redes/Icon-Twitter-White.svg";
-import whats from "public/redes/Icon-Whatsapp-Whatsapp.svg";
-import youtube from "public/redes/Icon-Youtube-White.svg";
-
 import styles from "./footer.module.scss";
+import Redes from "./redes";
 
 export default function Footer() {
   return (
@@ -44,39 +38,7 @@ export default function Footer() {
                 &nbsp; colmenajuvenil@recreabolivia.org
               </div>
             </Col>
-            <Col className={styles["seccion-redes"]}>
-              <div className="mb-1">Siguenos en nuestras redes</div>
-              <div>
-                <a
-                  className={styles["link-redes"]}
-                  target="_blank" rel="noopener noreferrer"
-                  href="https://www.facebook.com/ReCreaOrg"
-                >
-                  <Image src={face}></Image>
-                </a>
-                <a
-                  className={styles["link-redes"]}
-                  target="_blank" rel="noopener noreferrer"
-                  href="https://www.instagram.com/recreaorg"
-                >
-                  <Image src={insta}></Image>
-                </a>
-                <a
-                  className={styles["link-redes"]}
-                  target="_blank" rel="noopener noreferrer"
-                  href="https://twitter.com/recreaorg"
-                >
-                  <Image src={twitter}></Image>
-                </a>
-                <a
-                  className={styles["link-redes"]}
-                  target="_blank" rel="noopener noreferrer"
-                  href="https://api.whatsapp.com/send?phone=59178800360"
-                >
-                  <Image src={whats}></Image>
-                </a>
-              </div>
-            </Col>
+            <Redes />
           </Row>
         </Col>
       </Row>

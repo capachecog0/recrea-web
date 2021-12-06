@@ -76,7 +76,7 @@ export default function Carrusel() {
               Genera un gran <br className=".d-none .d-sm-block" /> impacto.
             </p>
             <Button className={styles["boton-carrusel"]}>
-              Te enseñamos como
+              <a href="https://cursos.recreabolivia.org">Te enseñamos como</a>
             </Button>
           </ImagenCarrusel>
         </Carousel.Item>
@@ -93,7 +93,9 @@ export default function Carrusel() {
             <h3 className={`${styles["caption-encabezado"]} texto-amarillo`}>
               jornadas de <br className=".d-none .d-sm-block" /> recolección
             </h3>
-            <Button className={styles["boton-carrusel"]}>haz click aquí</Button>
+            <Button className={styles["boton-carrusel"]}>
+              <a href="/voluntariados">Haz click aquí</a>
+            </Button>
           </ImagenCarrusel>
         </Carousel.Item>
       </Carousel>

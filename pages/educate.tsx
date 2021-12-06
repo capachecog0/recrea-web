@@ -7,6 +7,8 @@ import { TarjetaEnlace } from "components/tarjetaEnlace";
 import imgBanner from "public/paginas/educate/banner.png";
 import imgContenedor from "public/misc/contenedor-reciclaje.png";
 import imgLibros from "public/misc/libros.png";
+import imgVideoteca from "public/misc/videoteca.jpg";
+import imgLibrosMedioambientales from "public/misc/libros-medioambientales.jpg";
 import imgLibrosInfantiles from "public/misc/libros-infantiles.png"
 
 import React from "react";
@@ -53,7 +55,7 @@ export default function Educate() {
         <TarjetaEnlace
           volteada
           titulo="Videoteca Re.Crea"
-          imagen={imgLibros}
+          imagen={imgVideoteca}
           textoBoton="Más infomación"
           href="/videoteca"
         >
@@ -64,7 +66,7 @@ export default function Educate() {
           titulo="Puntos de Recolección"
           imagen={imgLibrosInfantiles}
           textoBoton="Más infomación"
-          href="/libros-educativos"
+          href="/puntos-de-recoleccion"
         >
           Puntos de recolección a nivel Bolivia. 
         </TarjetaEnlace>
@@ -74,9 +76,18 @@ export default function Educate() {
           titulo="Leyes y Normativas Nacionales"
           imagen={imgLibros} 
           textoBoton="Más infomación"
-          // href="/voluntariados"
+          href="/normativa-nacional"
         >
           Conoce un poco más las normativas nacionales.
+        </TarjetaEnlace>   
+
+        <TarjetaEnlace
+          titulo="Libros medioambientales"
+          imagen={imgLibrosMedioambientales} 
+          textoBoton="Más infomación"
+          href="/libros-medioambientales"
+        >
+          Conoce los libros medioambientales en las redes para que puedas conocer más y ser parte del impacto positivo.
         </TarjetaEnlace>        
       </ContenidoPagina>
 

@@ -1,0 +1,9 @@
+.redesComponentDark{
+    img{
+        filter: invert(25%);
+        transition: 100ms ;
+        &:hover{
+            filter: invert(70%);
+        }
+    }
+}
