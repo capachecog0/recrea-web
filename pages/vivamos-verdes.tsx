@@ -53,7 +53,7 @@ export default function VivamosVerde() {
         <Image layout="responsive" src={imgCuerpo} alt="Vivamos verde"></Image>
 
         <h2 className={estilosPagina.titulo2} style={{paddingTop: "1em"}}>
-          Te invitamos a registrarte en nuestros cursos "Vivamos Verde"
+          Te invitamos a registrarte en nuestros cursos Vivamos Verde
         </h2>
 
         <Row className={"justify-content-center"}>
